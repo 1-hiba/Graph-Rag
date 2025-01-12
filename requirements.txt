@@ -1,7 +1,10 @@
-streamlit
-google-generativeai
-python-dotenv
-langchain
-PyPDF2
-chromadb
-faiss-cpu
+streamlit==1.17.0
+neo4j==5.9.0
+langchain==0.14.0
+langchain_groq==0.1.0
+huggingface_hub==0.13.2
+networkx==3.0
+plotly==5.8.0
+pyvis==0.1.9
+py2neo==2021.2.3
+python-dotenv==0.21.0
