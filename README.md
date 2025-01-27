@@ -1,4 +1,5 @@
 # Knowledge Graph RAG System
+![image](https://github.com/user-attachments/assets/a86d8bbb-a973-445e-8ce3-34dea5483207)
 
 Cette application est un système avancé de **Retrieval-Augmented Generation (RAG)** qui combine la création de graphes de connaissances avec des réponses à des requêtes basées sur des documents. Elle s'appuie sur **Neo4j** comme base de données de graphes, **Groq's ChatGroq** pour le traitement du langage, et **Hugging Face Embeddings** pour la vectorisation des documents. L'interface permet l'extraction de connaissances, des réponses contextuelles, et une visualisation interactive en 3D des relations entre les entités.
 
