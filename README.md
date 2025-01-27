@@ -4,6 +4,7 @@ Here's a `README.md` file for your project:
 # Knowledge Graph RAG System
 
 This project is an advanced Retrieval-Augmented Generation (RAG) system that integrates knowledge graph creation with document-based query answering. It uses Neo4j as the graph database, Groq's ChatGroq for language processing, and Hugging Face embeddings for document vectorization. The system allows for document upload, knowledge extraction, and querying with visual representation of relationships in a 3D graph format.
+<img width="958" alt="graphrag" src="https://github.com/user-attachments/assets/bae0ae41-c6ef-4b83-b90b-d8c210d6be1a" />
 
 ## Features
 
