@@ -7,6 +7,7 @@ This project is an advanced Retrieval-Augmented Generation (RAG) system that int
 
 ## Features
 
+
 - **Document Upload**: Upload a PDF document to extract entities and relationships.
 - **Knowledge Graph Creation**: Automatically generates a knowledge graph based on extracted entities and relationships from the document.
 - **Query Interface**: Ask questions based on the uploaded document, and retrieve both a generated answer and knowledge graph connections.
