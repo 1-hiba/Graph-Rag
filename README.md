@@ -42,7 +42,21 @@ Cette application est un système avancé de **Retrieval-Augmented Generation (R
 
 ### **Étapes d'installation**
 
-1. Clonez ce dépôt sur votre machine locale :
-   ```bash
-   git clone https://github.com/yourusername/knowledge-graph-rag-system.git
-   cd knowledge-graph-rag-system
+```bash
+# Étape 1 : Clonez ce dépôt sur votre machine locale
+git clone https://github.com/yourusername/knowledge-graph-rag-system.git
+cd knowledge-graph-rag-system
+
+# Étape 2 : Installez les dépendances nécessaires
+pip install -r requirements.txt
+
+# Étape 3 : Configurez votre environnement en créant un fichier .env
+# Exemple de contenu du fichier .env :
+# (Assurez-vous de remplacer les valeurs par celles correspondant à votre configuration)
+echo "NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=yourpassword
+GROQ_API_KEY=your_groq_api_key" > .env
+
+# Étape 4 : Exécutez l'application
+streamlit run app.py
