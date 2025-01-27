@@ -42,6 +42,7 @@ Cette application est un système avancé de **Retrieval-Augmented Generation (R
 
 ### **Étapes d'installation**
 
+```bash
 # Étape 1 : Clonez ce dépôt sur votre machine locale
 git clone https://github.com/yourusername/knowledge-graph-rag-system.git
 cd knowledge-graph-rag-system
