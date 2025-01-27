@@ -1,38 +1,37 @@
-Here's a `README.md` file for your project:
-
-```markdown
 # Knowledge Graph RAG System
 
-This project is an advanced Retrieval-Augmented Generation (RAG) system that integrates knowledge graph creation with document-based query answering. It uses Neo4j as the graph database, Groq's ChatGroq for language processing, and Hugging Face embeddings for document vectorization. The system allows for document upload, knowledge extraction, and querying with visual representation of relationships in a 3D graph format.
-<img width="958" alt="graphrag" src="https://github.com/user-attachments/assets/bae0ae41-c6ef-4b83-b90b-d8c210d6be1a" />
+Cette application est un système avancé de **Retrieval-Augmented Generation (RAG)** qui combine la création de graphes de connaissances avec des réponses à des requêtes basées sur des documents. Elle s'appuie sur **Neo4j** comme base de données de graphes, **Groq's ChatGroq** pour le traitement du langage, et **Hugging Face Embeddings** pour la vectorisation des documents. L'interface permet l'extraction de connaissances, des réponses contextuelles, et une visualisation interactive en 3D des relations entre les entités.
 
-## Features
+---
 
+## 🚀 **Fonctionnalités**
 
-- **Document Upload**: Upload a PDF document to extract entities and relationships.
-- **Knowledge Graph Creation**: Automatically generates a knowledge graph based on extracted entities and relationships from the document.
-- **Query Interface**: Ask questions based on the uploaded document, and retrieve both a generated answer and knowledge graph connections.
-- **3D Graph Visualization**: Interactive 3D visualization of the knowledge graph using Plotly.
+- **📄 Upload de documents** : Chargez un document PDF pour extraire les entités et leurs relations.
+- **📊 Création de graphe de connaissances** : Génère automatiquement un graphe basé sur les entités et relations extraites.
+- **🔍 Interface de requêtes** : Posez des questions sur le document pour obtenir une réponse générée et les connexions associées dans le graphe.
+- **🌀 Visualisation 3D interactive** : Représentation graphique des relations entre entités à l’aide de **Plotly**.
 
-## Technologies Used
+---
 
-- **Streamlit**: For building the web interface.
-- **Neo4j**: A graph database to store and query relationships.
-- **Groq's ChatGroq**: For language processing and relationship extraction.
-- **Hugging Face Embeddings**: For document vectorization and similarity-based retrieval.
-- **Plotly**: To visualize relationships in a 3D graph.
-- **LangChain**: To handle document loading, splitting, and RAG operations.
+## 🛠️ **Technologies Utilisées**
 
-## Setup
+- **[Streamlit](https://streamlit.io/)** : Pour l’interface utilisateur.
+- **[Neo4j](https://neo4j.com/)** : Base de données graphique pour le stockage et la requête des relations.
+- **[Groq's ChatGroq](https://www.groq.com/)** : Modèle de langage pour l’extraction de relations et d’entités.
+- **[Hugging Face](https://huggingface.co/)** : Vectorisation des documents pour un meilleur alignement sémantique.
+- **[Plotly](https://plotly.com/)** : Visualisation en 3D des graphes.
+- **[LangChain](https://www.langchain.com/)** : Gestion des documents, opérations RAG et intégration des workflows.
 
-### Requirements
+---
 
-Make sure you have the following dependencies installed:
+## 🖥️ **Installation et Configuration**
 
-- Python 3.7 or higher
-- Neo4j instance running
-- Groq API key for language processing
-- Required Python libraries:
+### **Prérequis**
+
+- Python 3.7 ou supérieur.
+- Une instance **Neo4j** en cours d'exécution.
+- Une clé API **Groq** pour le traitement du langage.
+- Bibliothèques Python requises :
   - `neo4j`
   - `langchain`
   - `streamlit`
@@ -41,62 +40,9 @@ Make sure you have the following dependencies installed:
   - `pyvis`
   - `HuggingFaceEmbeddings`
 
-### Installation
+### **Étapes d'installation**
 
-1. Clone this repository to your local machine:
+1. Clonez ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/yourusername/knowledge-graph-rag-system.git
    cd knowledge-graph-rag-system
-   ```
-
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Set up your Neo4j database and provide connection details in the `.env` file or directly in the script.
-
-4. Get your **Groq API Key** by signing up on [Groq](https://www.groq.com/).
-
-5. Update the configuration with the correct details:
-   - **Neo4j URI**: Provide the URI of your running Neo4j instance.
-   - **Neo4j Credentials**: Your Neo4j username and password.
-   - **Groq API Key**: Your API key for ChatGroq.
-
-### Running the Application
-
-After setting up, run the Streamlit app with the following command:
-
-```bash
-streamlit run app.py
-```
-
-This will launch the web application. You can upload a PDF document, query the system, and view the generated knowledge graph.
-
-## Usage
-
-1. **Upload a PDF Document**: Drag and drop a PDF document into the upload box to extract entities and relationships.
-2. **Query the Knowledge Base**: Enter a question related to the document, and the system will return an answer generated by the language model and display the related entities from the knowledge graph.
-3. **Visualize Knowledge Graph**: View the 3D visualization of the knowledge graph, showing the relationships between entities.
-
-## Customization
-
-- You can modify the graph visualization settings in the sidebar to adjust the appearance of the 3D graph.
-- You can extend the functionality to support other document formats or improve entity extraction by enhancing the prompt to the ChatGroq model.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [Neo4j](https://neo4j.com/): Graph database used for storing entities and relationships.
-- [Groq](https://www.groq.com/): Language model for generating relationships from documents.
-- [Hugging Face](https://huggingface.co/): Embedding models used for document vectorization.
-- [Plotly](https://plotly.com/): For generating interactive 3D graphs.
-- [LangChain](https://www.langchain.com/): For handling document processing and RAG logic.
-```
-
-### Instructions:
-- Adjust the **repository URL** in the `README` to your actual GitHub repository URL.
-- Modify configurations like **Neo4j URI**, **credentials**, and **Groq API Key** as needed for your environment. 
